@@ -48,7 +48,7 @@ class CMakeBuild(build_ext):
                 cfg.upper(),
                 extdir)]
             if sys.maxsize > 2**32:
-                cmake_args += ['G', 'Visual Studio 17 2022', '-A', 'x64']
+                cmake_args += ['G', 'Visual Studio 17', '-A', 'x64']
             build_args += ['--', '/m']
         else:
             cmake_args += ['-DCMAKE_BUILD_TYPE=' + cfg]
