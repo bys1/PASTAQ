@@ -77,7 +77,7 @@ setup(
     description='Pipelines And Systems for Threshold Avoiding Quantification (PASTAQ): Pre-processing tools for LC-MS/MS data',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/PASTAQ-MS/PASTAQ",
+    url="https://github.com/bys1/PASTAQ",
     packages=find_packages('src/python-bindings'),
     package_dir={'': 'src/python-bindings'},
     ext_modules=[CMakeExtension('pastaq/pastaq_cpp')],
