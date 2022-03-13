@@ -21,7 +21,7 @@ endif()
 # Threads.
 find_package(Threads REQUIRED)
 # Zlib
-find_package(ZLIB)
+find_package(ZLIB REQUIRED)
 # Eigen.
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/ext/eigen" ${CMAKE_CURRENT_BINARY_DIR}/eigen)
 # Build pastaqs library.
