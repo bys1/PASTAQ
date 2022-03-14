@@ -50,6 +50,8 @@ class CMakeBuild(build_ext):
             if sys.maxsize > 2**32:
                 cmake_args += ['-DCMAKE_GENERATOR_PLATFORM=x64']
                 #cmake_args += ['G', 'Visual Studio 16 2019', '-A', 'x64']
+            subprocess.check_call(['dir'])
+            subprocess.check_call(['dir', '..'])
             build_args += ['--', '/m']
         else:
             cmake_args += ['-DCMAKE_BUILD_TYPE=' + cfg]
